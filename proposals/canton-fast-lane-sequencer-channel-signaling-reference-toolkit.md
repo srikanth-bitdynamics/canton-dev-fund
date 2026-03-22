@@ -525,6 +525,13 @@ The requested `2,800,000 CC` is best understood as funding five concrete enginee
 
 This budget is intentionally front-loaded toward engineering hardening and compatibility validation because the main risk is not “can we build a demo UI.” The main risk is delivering a safe, reusable toolkit on top of a real but still-maturing Canton capability surface.
 
+## Team Background
+
+### BitDynamics
+
+BitDynamics brings deep experience in building and operating blockchain infrastructure. The team has worked across Ethereum client infrastructure, validator operations, and production-grade hosting systems supporting validator infrastructure securing more than 2 billion AUD in assets. This background is directly relevant to building reliable, auditable, and security-conscious public infrastructure for a grants program. Team is also building actively on Canton. 
+
+
 ### Volatility Stipulation
 
 If the project timeline extends beyond 6 months due to Committee-requested scope changes, any remaining milestones should be renegotiated to account for significant USD/CC volatility.

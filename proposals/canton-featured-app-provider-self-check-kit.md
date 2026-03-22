@@ -217,6 +217,13 @@ Project-specific acceptance conditions:
 - Milestone 3 funds adoption and self-serve support: documentation, examples, and release packaging.
 - No recurring maintenance or hosted-service budget is requested in this proposal.
 
+## Team Background
+
+### BitDynamics
+
+BitDynamics brings deep experience in building and operating blockchain infrastructure. The team has worked across Ethereum client infrastructure, validator operations, and production-grade hosting systems supporting validator infrastructure securing more than 2 billion AUD in assets. This background is directly relevant to building reliable, auditable, and security-conscious public infrastructure for a grants program. Team is also building actively on Canton. 
+
+
 ### Volatility Stipulation
 
 If the project duration extends materially due to committee-requested scope changes, remaining milestones should be renegotiated for significant CC/USD volatility.

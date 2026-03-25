@@ -4,7 +4,6 @@
 **Implementing Entity:** Bitdynamics  
 **Status:** Submitted  
 **Created:** 2026-03-13  
-**Label** wallet-apps
 
 ---
 
@@ -219,48 +218,21 @@ The proposal introduces an external wallet implementation and supporting docs. I
 
 ## Milestones and Deliverables
 
-### Milestone 1: Spec Freeze and Wallet Core
-- **Estimated Delivery:** 6 weeks
-- **Focus:** lock the platform interfaces and stabilize the generic wallet core that already exists in prototype form
-- **Deliverables / Value Metrics:**
-  - stabilized provider RPC namespace for this wallet platform
-  - finalized type definitions for `PartyMode`, `HostingRole`, `RoutePlan`, `RouteFailureReason`, `PreparedOnboardingBundle`, `ExplainedTransaction`, `AuthDiagnostic`, `PackageCompatibilityReport`, and `ConformanceReport`
-  - hardened `SignerAdapter`, `LocalKeySigner`, and `MnemonicSigner`
-  - hardened `RoutePlanner`, `DomainRegistry`, `AuthDiagnostics`, and `PackagePreflight`
-  - explicit documentation of current external-party and multi-synchronizer constraints
-  - value metric: the web app can run on the new core package structure and surface route, auth, and package failures deterministically
+### Milestone 1: Public Alpha for Wallet Core and Routing Diagnostics
 
-### Milestone 2: External-Party Onboarding and Explainable Signing
-- **Estimated Delivery:** 8 weeks
-- **Focus:** make safe external-party usage a first-class user flow
-- **Deliverables / Value Metrics:**
-  - production-ready onboarding wizard for local-party and external-party modes
-  - topology-bundle review flow with local signing, propagation polling, and participant-aware submission that honors selected confirming/observing participants and thresholds
-  - human-readable transaction explanation view showing creates, exercises, archives, pinned contract IDs, synchronizer/domain, and expiry
-  - true local transaction-hash recomputation and verification before signing
-  - persisted explanation and audit record for signed submissions
-  - value metric: a user can onboard an external party and complete a prepare -> explain -> hash-verify -> sign -> submit flow in the demo environment using published docs
+The released alpha can run the wallet on the stabilized core and deterministically surface route, auth, and package failures.
 
-### Milestone 3: ClearSign Reference Integration Surfaces and Extension
-- **Estimated Delivery:** 8 weeks
-- **Focus:** harden ClearSign's existing reference integration surfaces and prove them through the wallet and extension
-- **Deliverables / Value Metrics:**
-  - hardened ClearSign-specific `provider`, `sdk`, and `react` packages used by the reference wallet and example dApp
-  - completed migration of `apps/web` to consume the shared packages end to end
-  - `apps/example-dapp` as the first external consumer with documented supported and unsupported flows
-  - Chrome MV3 extension release with side-panel UI, content-script bridge, per-origin approvals, and wallet-local approval flows for connect/sign/submit
-  - encrypted `chrome.storage.local` state and `chrome.storage.session` unlock state
-  - value metric: the example dApp can connect to the extension-backed wallet and complete a documented end-to-end flow against a configured Canton environment
+### Milestone 2: External-Party Onboarding and Signing Evaluation
 
-### Milestone 4: Operator Conformance Harness and Deployment Guides
-- **Estimated Delivery:** 4 weeks
-- **Focus:** turn the platform into an operator-ready reference implementation
-- **Deliverables / Value Metrics:**
-  - hardened `packages/conformance` CLI with JSON output and optional HTML report
-  - checks for JSON API reachability, JWT acceptance, user rights sufficiency, synchronizer reachability, package vetting, topology propagation, route planning, and end-to-end external signing viability against real deployments where supported
-  - local sandbox demo with at least two participant/domain scenarios
-  - operator guide for custom-node deployment and compatibility testing
-  - value metric: an operator can run the harness against a deployment and receive a reproducible report explaining compatibility and failure causes
+At least one evaluator completes the onboarding and explainable-signing flow and records usability and operator-readiness findings.
+
+### Milestone 3: Hardened Wallet and Extension Release
+
+The shared provider, SDK, and React layers, example dApp, and extension-backed flow are hardened based on evaluation feedback and documented supported boundaries.
+
+### Milestone 4: Operator Conformance and Deployment Readiness
+
+An operator can run the conformance harness against a real or demo deployment and get a reproducible compatibility report plus deployment guidance.
 
 ---
 

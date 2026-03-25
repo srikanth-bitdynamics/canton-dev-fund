@@ -265,18 +265,11 @@ Confidence in delivery:
 
 ## Milestones and Deliverables
 
-### Milestone 1: Evaluation Contract and Core Capstone Design
+### Milestone 1: Public Alpha for One Real Capstone and Grading Contract
 
-- **Estimated Delivery:** 6 weeks from project start
-- **Focus:** define the capstone and grading foundation that all later work depends on
-- **Deliverables / Value Metrics:**
-  - evaluation specification and rubric schema
-  - submission format and score-report contract
-  - deprecated-pattern and migration-check catalog
-  - full design blueprint for Foundations, Application, and Migration kits
-  - instructor and learner workflow specification
+One capstone kit, rubric contract, and working autograder flow are usable by a new evaluator from documentation alone.
 
-**Sub-Milestone Structure:**
+**Deliverables Structure:**
 
 | Stage | Weeks | Description |
 |-------|-------|-------------|
@@ -284,21 +277,12 @@ Confidence in delivery:
 | 1b. Capstone Blueprinting | 3-4 | Finalize starter-kit scope, learner tasks, instructor workflow, and grading checkpoints |
 | 1c. Validation Review | 5-6 | Internal dry-run review of grading design and finalization of implementation package |
 
-### Milestone 2: Starter Kits and Autograder Core
 
-- **Estimated Delivery:** 15 weeks from project start
-- **Focus:** deliver the starter repositories and the first working grading infrastructure
-- **Deliverables / Value Metrics:**
-  - Foundations Capstone Kit
-  - Application Developer Capstone Kit
-  - Migration Capstone Kit
-  - scaffolded expansion library for follow-on kits using the same project and grading model
-  - evaluator CLI with deterministic checks
-  - JSON and Markdown grading outputs
-  - repo structure, build/test, and forbidden-pattern validation
-  - reference submissions and failing-fixture corpus for regression coverage
+### Milestone 2: External Cohort or Instructor Evaluation
 
-**Sub-Milestone Structure:**
+At least one instructor, learner cohort, or evaluator run validates the first three kits and records grading clarity, realism, and difficulty calibration.
+
+**Deliverables Structure:**
 
 | Stage | Weeks | Description |
 |-------|-------|-------------|
@@ -306,23 +290,11 @@ Confidence in delivery:
 | 2b. Evaluator Delivery | 12-14 | Implement evaluator CLI, rule engine, and grading outputs |
 | 2c. Internal Trial Validation | 15 | Run internal rehearsal against representative learner submissions |
 
-### Milestone 3: CI Integration, Pilot Cohorts, and Release Packaging
+### Milestone 3: Hardened Reusable Assessment Release
 
-- **Estimated Delivery:** 24 weeks from project start
-- **Focus:** make the framework reusable and adoption-ready for real programs
-- **Deliverables / Value Metrics:**
-  - GitHub Action integration and CI examples
-  - pinned evaluator container or reproducible runtime packaging
-  - regression replay suite for reference and failing submissions
-  - pilot cohort validation with instructors or learners
-  - revised scoring tolerances and feedback quality improvements
-  - maintainer docs, rubric-authoring guide, instructor guides, and release packaging
-  - kit catalog and scaffold workflow for future capstone expansion
-  - initial official-doc coverage baseline and mirrored-doc sync/report workflow
-  - documented contributor workflow for syncing future DAML/Canton docs versions by pull request
-  - optional Architecture / Design Capstone Kit if scope remains healthy
+Feedback is incorporated into the kits, grading outputs, CI runtime, maintainer documentation, and expansion workflow so another program can reuse the package directly.
 
-**Sub-Milestone Structure:**
+**Deliverables Structure:**
 
 | Stage | Weeks | Description |
 |-------|-------|-------------|

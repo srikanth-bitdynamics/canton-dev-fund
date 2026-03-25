@@ -177,45 +177,29 @@ This is an external developer harness. Teams can adopt it incrementally or ignor
 
 ## Milestones and Deliverables
 
-### Milestone 1: Local Auth Harness and Token CLI
+### Milestone 1: Public Alpha for Authenticated Canton Development
 
-- **Estimated Delivery:** 4 weeks  
-- **Focus:** Local auth that works out of the box  
-- **Deliverables / Value Metrics:**  
-  - local auth harness startup flow for both fixture mode and reference-IdP mode  
-  - token generation CLI  
-  - claim presets for common app and service roles  
-  - issuer, audience, and rights-oriented claims templates for Canton application development  
-  - local startup documentation  
-  - deterministic fixture-based tests for token issuance and validation  
-  - support for one documented reference IdP integration in the first funded release  
-  - value metric: a team can start the harness and obtain working local tokens for documented developer roles in under 10 minutes from a clean environment
+A new team can start fixture mode or reference-IdP mode and complete one documented authenticated Canton flow from a clean environment.
 
-### Milestone 2: Middleware and App Integration Examples
+### Milestone 2: External Evaluator Run and Integration Review
 
-- **Estimated Delivery:** 4 weeks  
-- **Focus:** Practical use in real Canton application stacks  
-- **Deliverables / Value Metrics:**  
-  - backend middleware example for token validation and claims consumption  
-  - frontend integration example for authenticated local development flows  
-  - sample environment and config templates  
-  - end-to-end authenticated example flows  
-  - automated tests for authenticated request handling  
-  - value metric: example applications can exercise authenticated Canton-facing flows end to end without ad hoc auth setup outside the documented harness
+At least one evaluator completes the backend and frontend example flows and records setup friction, claim-shape issues, and CI reproducibility feedback.
 
-### Milestone 3: CI Fixtures, Diagnostics, and Documentation
+### Milestone 3: Hardened CI-Ready Release
 
-- **Estimated Delivery:** 3 weeks  
-- **Focus:** Repeatable team adoption and lower debugging cost  
-- **Deliverables / Value Metrics:**  
-  - CI-ready auth fixtures  
-  - `doctor` checks for common misconfiguration cases including expired token, wrong issuer, wrong audience, missing claims, and insufficient `readAs` / `actAs`  
-  - troubleshooting guide  
-  - short end-to-end walkthrough  
-  - release artifacts and usage documentation  
-  - value metric: teams can reproduce documented auth fixtures in CI and receive clear diagnostics for at least the common failure modes listed in the proposal
+Evaluation feedback is incorporated, `doctor` diagnostics cover the documented failure modes, and a second clean-environment rerun succeeds without ad hoc setup.
 
 ---
+
+
+## Potential Ecosystem Beneficiaries
+
+This proposal is intended as public-good infrastructure for the wider Canton ecosystem, and I have identified a few ecosystem teams that are well aligned with the feature set and have expressed interest in this kind of capability, including `H20Nodes`, `Lumens.fi`, `Gateway`, and `Hashrupt`.
+
+These features address recurring setup and integration pain that teams in this category face when building or operating Canton-based systems, and shared tooling would reduce the need for each team to recreate similar workflows independently.
+
+More broadly, this project is useful for all teams setting up local Canton development environments, standardizing project scaffolding, and reducing repeated setup friction across build, test, and deployment workflows.
+
 
 ## Acceptance Criteria
 

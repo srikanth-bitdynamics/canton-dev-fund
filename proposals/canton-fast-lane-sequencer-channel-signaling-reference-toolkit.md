@@ -434,37 +434,17 @@ Institutions exchange rapid off-ledger challenge-response signals to confirm ses
 
 ## Milestones and Deliverables
 
-### Milestone 1: Protocol and Client Foundation
+### Milestone 1: Public Alpha for Bounded Non-Final Signaling
 
-- **Estimated Delivery:** 4 weeks
-- **Focus:** define the reference signaling model and client boundary
-- **Deliverables / Value Metrics:**
-  - compatibility review against the currently available sequencer-channel service and client surface
-  - a schema library for `SignalEnvelope` and related session messages
-  - a JVM channel adapter wrapping the currently available sequencer-channel client surface
-  - a TypeScript SDK boundary for point-to-point signaling integration
-  - technical documentation clearly separating non-final signaling from ledger-backed finality
+One reference flow demonstrates low-latency signaling plus a later normal Canton or Daml confirmation step, with safety boundaries clearly documented.
 
-### Milestone 2: Recovery, Replay Protection, and Reference App
+### Milestone 2: External Technical Evaluation
 
-- **Estimated Delivery:** 5 weeks
-- **Focus:** make the toolkit robust enough for real operational use
-- **Deliverables / Value Metrics:**
-  - reconnect and resume behavior
-  - duplicate and stale-message handling
-  - bounded resend and retry policies
-  - a minimal reference application demonstrating one low-latency signaling flow and one later ledger-backed confirmation step
+At least one evaluator or app team reviews or runs the signaling toolkit, readiness signaling, or reassignment handoff.
 
-### Milestone 3: Use-Case Packs and Integration Guides
+### Milestone 3: Hardened Reference Toolkit Release
 
-- **Estimated Delivery:** 4 weeks
-- **Focus:** make the pattern easy for external teams to apply correctly
-- **Deliverables / Value Metrics:**
-  - RFQ / quote-negotiation example
-  - reassignment-handshake or readiness-signaling example
-  - one additional example from margin-warning, workflow-nudge, or identity challenge-response flows
-  - integration guidance for event-driven automation and safe ledger handoff
-  - operator and developer documentation for configuration, security boundaries, and failure handling
+Reconnect, replay protection, retry behavior, examples, and documentation are refined based on evaluator feedback and published as a reusable toolkit.
 
 ---
 

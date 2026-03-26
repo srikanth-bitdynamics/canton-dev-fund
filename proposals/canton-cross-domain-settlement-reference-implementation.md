@@ -239,6 +239,14 @@ The minimal DvP app and documentation are strong enough that an external team ca
 
 ---
 
+## Potential Ecosystem Beneficiaries
+
+This proposal is intended as public-good infrastructure for the wider Canton ecosystem, and I have identified a few ecosystem teams that are well aligned with the feature set and have expressed interest in this kind of capability, including `Gateway`, `Lumens.fi`, and `Hashrupt`.
+
+These features address recurring orchestration and recovery pain that teams in this category face when building or operating Canton-based systems, especially where delivery-versus-payment or asset movement needs to span multiple synchronizer domains.
+
+More broadly, this project is useful for all teams building cross-domain settlement workflows, multi-synchronizer financial applications, and reusable post-trade coordination patterns on Canton.
+
 ## Acceptance Criteria
 
 The Tech & Ops Committee will evaluate completion based on:

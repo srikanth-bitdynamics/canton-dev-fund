@@ -143,6 +143,14 @@ The generated output, helper package, and reference integration demonstrate repl
 
 ---
 
+## Potential Ecosystem Beneficiaries
+
+This proposal is intended as public-good infrastructure for the wider Canton ecosystem, and I have identified a few ecosystem teams that are well aligned with the feature set and have expressed interest in this kind of capability, including `Gateway`, `Lumens.fi`, and `Hashrupt`.
+
+These features address recurring contract-to-application integration pain that teams in this category face when building or operating Canton-based systems, especially where `.dar` outputs still need to be inspected manually and identifiers are otherwise hardcoded into TypeScript applications.
+
+More broadly, this project is useful for all teams building TypeScript applications on top of Daml and Canton, standardizing generated contract identifiers, and reducing upgrade risk caused by stale package, template, and choice references.
+
 ## Acceptance Criteria
 
 The Tech & Ops Committee will evaluate completion based on:
